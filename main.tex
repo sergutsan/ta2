@@ -59,7 +59,7 @@
 
 %\usepackage[draft]{ednote}
 %\usepackage{ednote}
-\journal{Computers and Education}
+\journal{Name of Journal here}
 
 \renewcommand{\cite}{\citep}
 \newcommand{\citenop}[1]{\citeauthor{#1}~(\citeyear{#1})}
@@ -91,20 +91,22 @@
 \title{Assisting teachers in an exploratory learning environment
   for algebraic generalisation} 
 
-%Informing the Design of
-%   Intelligent Support for ELE by \\ Iterative Communication Capacity
-% Tapering}
-
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{}
 %% \address[label1]{}
 %% \address[label2]{}
 
-\author{Sergio Gutierrez-Santos \and Manolis Mavrikis \and Eirini
-  Geraniou \and Alexandra Poulovassilis \\ 
-  \{sergut,ap\}@dcs.bbk.ac.uk, \{m.mavrikis,e.geraniou\}@lkl.ac.uk}
+\author[BBK]{Sergio Gutierrez-Santos}
+\ead{sergut@dcs.bbk.ac.uk}
+\author[IoE]{Manolis Mavrikis}
+\ead{m.mavrikis@ioe.ac.uk}
+\author[IoE]{Eirini Geraniou}
+\ead{e.geraniou@ioe.ac.uk}
+\author[BBK]{Alexandra Poulovassilis}
+\ead{ap@dcs.bbk.ac.uk}
 
-\address{London Knowledge Lab} 
+\address[BBK]{London Knowledge Lab, Birkbeck}
+\address[IoE]{London Knowledge Lab, Institute of Education}
 
 \begin{abstract}
 One of the main obstacles to the integration of exploratory learning
@@ -147,23 +149,17 @@ possible extensions to other learning domains.
 
 %% main text
 
+\input{01intro}
+\input{02bg}
+\input{03methodology}
+\input{04tools}
+\input{05feval}
+\input{06seval}
+\input{07discussion}
+\input{08conclu}
+\appendix
+\input{10evaluationForms.tex}
 
-
-%% The Appendices part is started with the command \appendix;
-%% appendix sections are then done as normal sections
-%% \appendix
-
-%% \section{}
-%% \label{}
-
-%\begin{thebibliography}{00}
-
-%% \bibitem{label}
-%% Text of bibliographic item
-
-%\bibitem{}
-
-%\end{thebibliography}
 
 \section*{Acknowledgements} 
 
@@ -175,14 +171,15 @@ wizard-of-Oz studies, and acknowledge the contribution of the MiGen team and
 particularly Eirini Geraniou for the design of and
  participation in the studies, and Darren Pearce and Richard Noss for their comments in various versions of this paper. 
 
-%\section*{Acknowledgements} The authors would like to acknowledge the
-%rest of the members of the MiGen team and in particular Richard Noss, Darren
-%Pearce and Eirini Geraniou for their comments and contibution to the
-%paper, and Ken Kahn for the development of eXpresser. In addition, we
-%would like to thank the teachers and students who took part in the studies.
-
 \bibliographystyle{elsarticle-harv}
 \bibliography{2009-04-28-group-6308,cae-cal09}
+
+%\begin{thebibliography}{00}
+%% \bibitem{label}
+%% Text of bibliographic item
+%\bibitem{}
+%\end{thebibliography}
+
 \end{document}
 
 \endinput
