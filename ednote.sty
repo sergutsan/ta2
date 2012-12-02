@@ -1,0 +1,53 @@
+%%% Meine eigenen Editor notes
+
+% Kenndaten
+
+
+% Initialisierungsteil
+
+\RequirePackage{ifthen}
+\newboolean{eddraft}
+
+%\setlength{\marginparwidth}{1.2in}
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize #1]%
+{\raggedright\footnotesize #1}}
+
+% Deklaration von Optionen
+
+\DeclareOption{draft}{\setboolean{eddraft}{true}}
+
+
+% Ausfuehrung von Optionen
+
+\ProcessOptions
+
+
+% Laden von Paketen
+
+%\RequirePackage{colormacros}
+\ifthenelse{\boolean{eddraft}}
+{\RequirePackage[none,bottom]{draftcopy}}
+{}
+
+
+% colors
+\usepackage{color}
+\definecolor{YellowOrange}{rgb}{0.8,0.4,0}
+\def\yelloworange #1{{\color{YellowOrange}#1}}
+
+% Hauptteil
+
+\ifthenelse{\boolean{eddraft}}{ 
+  \def\pubnote#1{\thispagestyle{myheadings}\markboth{#1}{#1}}
+  \def\ednoteshape{\sf}
+  \def\ednotetitleshape{\bf\em}
+  \def\ednote#1{\message{!}\marginpar{{\ednotetitleshape
+        \yelloworange{\fbox{!}}}}\footnote{{\ednotetitleshape \/} \ednoteshape #1}}
+  \newenvironment{Note}{\begin{quote}\message{note!}\ednoteshape}{\end{quote}}
+ % \newcommand{\issue}[2][]{\message{Issue: {#1}}%
+  %  \marginpar{{\ednotetitleshape \yelloworange{Issue:}} {\ednoteshape #1}}%
+   % \footnote{\label{iss:#1}{\yelloworange{\ednotetitleshape Issue: {#1}\quad {\ednoteshape #2}}}}}
+  \long\def\ignore#1{}
+  \def\randnotiz#1{*\marginpar{* {\footnotesize\ednotetitleshape #1}}}
+}{\def\ednote#1{}}
