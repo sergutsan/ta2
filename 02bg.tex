@@ -66,7 +66,7 @@ affordances' and how it can enhance
  students’ understanding of algebraic generalisation and to~\cite{CompAndEdPaper} for further details
 of the system architecture, the Activity and Task design, and Activity Documents.  
 
-Exploratory Learning Environments such as MiGen’s eXpresser
+Exploratory Learning Environments such as MiGen's eXpresser
 have the potential to support students' exploration while at the same
 time fostering progressive building of knowledge. However, the
 exploratory nature of the tasks undertaken with eXpresser requires
@@ -112,31 +112,31 @@ relevant to what the students are doing, or does not really help them
 advance in the current task. There are also cases in which the
 ambiguity of the students' actions requires a dialog with the student
 to understand what they want to do and what kind of help they
-need. When one of these situations arises, the teacher can come and
+need. When one of these situations arises, the teacher needs to come and
 help the student. 
 
 The second type of support is very simple but very necessary. The
 target group age for the MiGen system is 11--14-year-old children. At
-this age, is easy for learner to become distracted, even more so when
+this age, it is easy for learner to become distracted, even more so when
 they are interacting with a computer connected to the
 internet. Teachers need to remind students constantly to remain
 on-task and avoid distractions. The MiGen system is only one
-application in the student's computer, so it can detect distractions
+application running on the student's computer, so it can detect distractions
 (e.g. by detecting inactivity on eXpresser) but cannot do anything
 about it. 
 
-Finally, teachers want to support the whole class in two ways:
+Finally, teachers may want to support the whole class in two additional ways:
 explaining common misconceptions to the whole class, if the need
-arises, and steering their learning as a group to prevent ``fast''
-students to become bored and ``slow'' students to become
+arises, and steering their learning as a group in such a way so as to prevent ``fast''
+students from becoming bored and ``slow'' students from becoming
 frustrated. The eGeneraliser is a system that monitors only
-individual interactions, not the whole group. 
+individual interactions, not those of the whole group. 
 
 These three types of support are necessary for a productive lesson
 using a microworld like eXpresser, yet they can become very
 challenging for a teacher without any additional support. Depending on
 the classroom configuration, teacher cannot see all the students'
-screens. Even if they do, the constant demands for their attention
+screens. Even if they do, the constant demands for the teacher's attention
 makes it very difficult to monitor what thirty students are doing at
 the same time. There is a clear need for computer-based support to
 make teacher aware of what is happening so that they can act
@@ -145,9 +145,9 @@ accordingly.
 \subsection{Our approach}
 \label{sec:our-approach}
  
-As students are undertaking their tasks within the eXpresser, a series
-of {\em indicators} are automatically detected by the eXpresser or
-inferred by the eGeneraliser and are submitted by them to the MiGen
+In the MiGen system, as students are undertaking their tasks within the eXpresser, a series
+of {\em indicators} are automatically detected by the eXpresser, or
+inferred by the eGeneraliser and submitted by them to the MiGen
 Server for storage in the MiGen database\footnote{The MiGen software
   comprises the eXpresser running on each student’s computer, the TA
   tools running on the teacher’s computer, and the MiGen Server and
@@ -155,24 +155,24 @@ Server for storage in the MiGen database\footnote{The MiGen software
   the information produced and required by the eXpresser and the TA
   tools (see [CompAndEdPaper,IEEETLTPaper] for details).}.   
 The set of indicators that are meaningful and useful for teachers in
-their role in the classroom was identified through an iterative
+their role in the classroom has been identified through an iterative
 process, undertaken collaboratively with our group of teacher
 collaborators on the MiGen project (see Section~\ref{sec:methodology}).  
 
 There are two categories of indicators: Task Independent (TI)
-indicators refer to aspects of the student’s interactions that are
+indicators refer to aspects of the student's interactions that are
 related to the eXpresser itself and do not depend on the specific task
 the student is working on. TI indicators generally refer to a single
-action undertaken by the student, such as ‘placed a tile on the
-canvas’, ‘created a building-block’, ‘created a pattern’. In contrast,
+action undertaken by the student, such as 'placed a tile on the
+canvas', 'created a building-block', 'created a pattern'. In contrast,
 the detection of Task Dependent (TD) indicators requires access to
 knowledge about the task that the student is working on, it may relate
 to combinations of actions by the student, and it requires intelligent
 reasoning by the system. This reasoning is undertaken by the
 eGeneraliser component, using a mixture of case-based and rule-based
-techniques. Examples of TD indicators are `student has made a
-plausible building block for this task’, ‘student has coloured their
-pattern generally’ and `student has achieved a task goal'. Detailed
+techniques. Examples of TD indicators are 'student has made a
+plausible building block for this task', 'student has coloured their
+pattern generally' and 'student has achieved a task goal'. Detailed
 discussions of the MiGen's TI and TD indicators and how the latter are
 inferred by the eGeneraliser may be found in~\cite{IEEETLTPaper}.
  
@@ -223,9 +223,8 @@ The GA tool tracks progress in the current task's goals.
 % some point during the student’s construction but are not being
 % achieved by the current model.
 Section~\ref{sec:methodology} explains the methodology we followed to
-design these three tools to assist teachers in the classroom, and
-Section~\ref{sec:teach-assist-tools} described the final result in
-more detail. 
+design these three tools, and Section~\ref{sec:teach-assist-tools}
+described the tools themselves in more detail. 
 
 % REUSE SOMEWHERE
 % The teacher can also select to see a summary of the goal achievement
@@ -239,13 +238,13 @@ more detail.
 \subsection{Related Work}
 \label{sec:related}
 
-In terms of related work, the work closest to MiGen’s TA tools is that
+In terms of related work, the work closest to MiGen's TA tools is that
 of [20] which uses Web log data generated by course management systems
 (WebCT in their case) to help instructors be aware of students’
 activities in distance learning classes; [21] which presents tools for
-helping teachers understand students’ behaviour in adaptive tutorials
-through post-analysis of the system’s data logs; [22] which presents
-tools for teachers to visualise students’ progress through
+helping teachers understand students' behaviour in adaptive tutorials
+through post-analysis of the system's data logs; [22] which presents
+tools for teachers to visualise students' progress through
 simulation-based practical work sessions, and [23] which provides
 awareness information to teachers so as to support their role as
 moderators of multiple e-discussions.  
@@ -254,7 +253,7 @@ moderators of multiple e-discussions.
 need a, slimmed down, discussion of this work here; plus additional
 relevant references ***] 
  
-To our knowledge, MiGen’s TA tools represent the first work that is
+To our knowledge, MiGen's TA tools represent the first work that is
 targeted at notifying teachers of students’ progress during
 constructionist learning activities in the classroom, notifying the
 teacher of students’ attainment of key indicators, and aiming to
