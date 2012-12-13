@@ -1,5 +1,5 @@
-*pdf
-*ps
+*.pdf
+*.ps
 _region_.tex
 #*
 *#
