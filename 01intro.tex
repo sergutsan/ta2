@@ -3,69 +3,58 @@
 
 Exploratory Learning Environments (henceforth ELEs) are a particular
 type of learning environment where the focus is on students'
-exploration of knowledge domain on their own terms. Examples of ELE
+exploration of the knowledge domain. Examples of ELE
 include simulators, virtual labs, microworlds, and educational
 games. ELE give considerable freedom to students, who may explore and
 learn in a variety of different ways.
 
 ELE are usually designed to provide opportunities for learners to
-develop complex cognitive skills rather than just knowledge of concepts in the subject
-domain [*thompson87,*hoyles93]. The tasks that students are asked to
+develop conceptual rather than just procedural knowledge in the subject
+domain. The tasks that students are asked to
 undertake are open-ended in nature, may have many alternative
 solutions, and encourage students to explore the learning
 environment and follow a variety of solution approaches. Research
 has found that considerable guidance is required to ensure learning in
-such open-ended contexts \cite{kirschner06,Noss96,Kynigos92,MayerDiscovery},
+such open-ended contexts~\cite{kirschner06,Kynigos92,MayerDiscovery},
 but in the presence of adequate support ELE can lead to more engagement
-and deeper learning~\cite{deeperLearning}. 
+and robust learning (c.f.~\cite{Noss96,JongJoolingen98} and for more
+recent reviews of the area~\cite{InquiryLearningJoolingen,HealyKynigosZDM2010}. 
 
-This support is usually provided by human teachers although, as we
-will see in Section~\ref{sec:migen-system}, it can also be
-computer-based support to some extent.
-Research in students’ learning with microworlds specifically has highlighted
-the indispensable role of the teacher as a ‘competent guide’ (*Leron,
-1985), a ‘facilitator’ (*Hoyles, Sutherland, 1989), or ‘orchestrator’
-(*Trouche, 2004; *Hoyles et al., 2004) of both well-defined
-investigations (*Kynigos, 1992) and goal-oriented exploration, which
-aligns with a learning agenda (*Noss \& Hoyles, 1996). However, in
-order to achieve those goals effectively for big groups in the
-classroom, teachers need to be aware of what is happening. This cannot
-happen with the usual tools that teachers have been relying on for
-years. They cannot just look at the students and understand what they
-are doing, because the students' attention is not focused on the
-teacher but on their computers, and the teacher cannot see all
-computer screens at the same time (much less if they are
-touchscreens). The teacher, therefore, need a way to become aware of
-the situation in the classroom if they aspire to become efective
-facilitators or orchestrators for their students. 
-
-In this paper we present a microworld-based system that is designed to
-be deployed in classrooms within schools ---where a typical class size
-is around 30 students---, for supporting the learning of algebraic
-generalisation. Given the
-open-ended nature of the tasks that the students are working on and
-the class sizes, teachers can only be aware of what a small number of
+In order to provide immediate support to students recent efforts  
+(that of our group and others) aim to design intelligent components ... 
+that undertake at least some of the trivial tasks of the teacher. 
+However, this intelligent support cannot completely replace the teacher 
+whose role in exploratory learning is that 
+of a 'facilitator’, or
+`orchestrator'~\cite{Trouche2004,Hoyles2004Integration}. This role
+would be easy to achieve in a one-to-one student-tutor interaction but in already
+ busy classroom there are several challenges that are further compounded by the 
+use technology. During interaction with ELEs in particular and given the
+open-ended nature of the tasks that the students are working on,
+ teachers can only be aware of what a small number of
 students are doing at any one time as they walk around the classroom –
 the computer screens of the students who are not in their immediate
 vicinity are not visible to them and those students may not be engaged
 in productive construction (going so far, in our own experience, as
 browsing the web, playing games, or engaging in online chat). It is
-therefore hard for the teacher to know which students are currently in
-difficulty and in need of her support, which students are making
-progress on the task, and which students may be off-task. Even for the
+therefore hard for teachers to know which students are currently in
+difficulty and in need of their support, which students are making
+progress or are off-task. Even for the
 students whose screens are currently visible to the teacher, it may be
 hard for the teacher to understand the process by which students have
 arrived at the current state of their construction and the recent
 feedback they have received from the system, and to provide therefore
-targeted guidance without engaging in a lengthy dialogue with the
-student.
- 
-In our efforts to support teachers, we have designed and developed a
-suite of visualisation and notification
-tools, which we refer to as the {\em Teacher Assistance (TA)} tools
-and which are the focus of this paper. The aim of the TA tools is to
-assist the teacher in focussing her attention across the whole class and to
-inform her own interventions to support students in reflecting on
+targeted guidance. 
+
+In this paper we present our approach to design tools that can assist
+ teachers in a classroom where students are using ELEs. Our use case
+ revolves around an intelligent microworld to that is designed to
+ support the developmen of algebraic ways of thinking. We have
+ designed and developed a suite of visualisation and notification
+tools, which we refer to as the {\em Teacher Assistance (TA)}
+tools. The aim of the TA tools is to
+assist teachers in focussing her attention across the whole class and to
+inform their own interventions to support students in reflecting on
 their work, the feedback they have been given by the system, setting
 and working towards new goals, and comparing and discussing their
 solutions with their peers. 
@@ -84,12 +73,7 @@ in~\cite{PearceLazard2010Design,IEEE-TLT-TA}.
 Also, the discussion in the present paper
 encompasses the whole suite of MiGen tools targeted at supporting the
 teacher in monitoring students’ activities and progress in the
-classroom, not just the ST tool.  Our focus in this paper is on tasks
-undertaken individually by students. MiGen also provides a tool to
-support the teacher in grouping students for the collaborative tasks
-that follow on from their individual constructions~\cite{GroupingTool}
-and providing further support for
-students’ collaboration is an area of on-going research.
+classroom.
  
 The outline of the paper is as follows. In
 Section~\ref{sec:backgr-relat-work}  we give an
@@ -114,8 +98,6 @@ discusses the outcomes of these
 evaluations, and Section~\ref{sec:conclusion} 
 gives our concluding remarks and directions
 for further research.
-
-
 
 
 %%% Local Variables:
