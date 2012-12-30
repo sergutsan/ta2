@@ -2,34 +2,39 @@
 \section{Background and Related Work}
 \label{sec:backgr-relat-work}
 
-As we mentioned in the Introduction, both our group and others have
+As we mentioned in the introduction, both our group and others have
 made attempts to provide intelligent support in
-ELEs~\cite{MiGen-JRPIT,veermans03,AmersiConati09}. There are always
-going to be however instances that intelligent components cannot 
-cover or that are intentionally left for the teacher to deal
-with. Examples include very specific conceptual difficulties, 
+ELEs~\cite{MiGen-JRPIT,veermans03,AmersiConati09}.
+However, there will always be situations where the intelligent components cannot 
+help the student or that are intentionally left for the teacher to handle. 
+Examples include very specific conceptual difficulties, 
 engagement nudges to prevent students from getting distracted, 
-and whole classroom support in, for example, plenary discussions based 
-on student's work. In all these occasions the teacher's role is
- indispensable especially when dealing with young children. 
+and whole-classroom support in, for example, plenary discussions based 
+on students' work. In all these situations, the teacher's role is
+indispensable, especially when dealing with younger children. 
+These types of support are necessary for a productive lesson
+in exploratory learning setting, yet they can become very
+challenging for the teacher. Depending on
+the classroom configuration, the teacher cannot see all the 
+students' screens at the same time. 
+Even if that is possible, constant demands by the students 
+for the teacher's attention can make it very difficult 
+to monitor what all students are doing at all times. 
+There is therefore a clear need for computer-based support to
+increase the teacher's awareness of the classroom `state' 
+so that she can intervene as appropriate. 
+%In order to design these tools we followed a user-centred approach to
+%derive teacher's requirements in the form of usage scenarios. These
+%are presented in Section~\ref{sec:methodology} whereas the tools are
+%described in more detail in Section~\ref{sec:teach-assist-tools}. 
 
-These three types of support are necessary for a productive lesson
-using a microworld like eXpresser, yet they can become very
-challenging for a teacher without any additional support. Depending on
-the classroom configuration, teacher cannot see all the students'
-screens. Even if they do, the constant demands for the teacher's attention
-makes it very difficult to monitor what thirty students are doing at
-the same time. There is a clear need for computer-based support to
-increase teachers' awareness so that they can act accordingly. In
-order to design these tools we followed a user-centred approach to
-derive teacher's requirements in the form of usage scenarios. These
-are presented in Section~\ref{sec:methodology} whereas the tools are
-described in more detail in Section~\ref{sec:teach-assist-tools}. 
-
-First, in sub-section~\ref{sec:migen-system} we present the MiGen
-system that provided the context for which we designed and developed 
-the TA tools \dots. We present it to help the reader understand our
- particular use case and provide a glimpse of the open-ended nature 
+In sub-section~\ref{sec:migen-system} we present the MiGen
+system that provides the context in which we have designed and developed 
+a set of Teacher Assistance (TA) tools that aim to assist the
+teacher in focussing her attention across the class and to inform the
+teacher's interventions to support students as they are working in the ELE. 
+We present the MiGen system context in order to help the reader understand 
+our particular case study and to provide a glimpse of the open-ended nature 
 of the activities that students undertake.  In sub-section~\ref{sec:related}
 we present related work.
 
@@ -38,28 +43,28 @@ we present related work.
 
 The MiGen project (http://www.migen.org) has designed and developed an
 intelligent, exploratory environment to support 11 to 14-year-old
-students in developing algebraic ways of
-thinking~\cite{Manolis2012Sowing}.
- Using a mathematical microworld called the {\em eXpresser}, students construct
-two-dimensional tiled patterns and derive general expressions for the number
-of tiles required to colour the pattern. 
-
-Using the eXpresser, students are asked to construct
-two-dimensional tiled patterns, which may be coloured in multiple ways, 
-and to derive general rules for the number of tiles of each
-colour required to paint each pattern and their model
-overall. Students are prompted to create `building-blocks' to
-construct their patterns, depending on their perceptions of the
-pattern’s structure. Each building block is made up of a group of
+students learning of algebraic generalisation.
+Using a mathematical microworld called the {\em eXpresser}, students 
+are asked to construct two-dimensional tiled models and associated
+algebraic rules. In order to build their model, students need to
+create `building blocks' out of unit-square coloured tiles depending
+on their perception of the model's structure, 
+and to repeat each building block in order to form a `pattern'
+which forms part of their overall model. 
+The algebraic rules they are asked to construct relate 
+to the number of tiles of each colour required to paint each 
+pattern and their model overall. 
+Each building block is made up of a group of
 tiles, and can be repeated horizontally, vertically or diagonally to
-contribute to the construction of the pattern. For example, Figure 1
-shows an example model that students may be asked to construct. They
-may do so by creating building-blocks to
-generate the centres of the flowers, the petals, and the stalks, and
-will be nudged
-towards deriving rules for the number of red tiles and the number of
-green tiles required to paint the model, given the number of yellow
-tiles.
+contribute to the construction of a `pattern'. 
+For example, Figure~\ref{fig:example}
+shows an example model that students may be asked to construct. 
+They may do so by creating building blocks to
+generate the centres of the flowers, the petals, and the stalks, 
+that they will then repeat to make the yellow, red and green patterns,
+respectively. They will be nudged towards deriving rules 
+for the number of red tiles and the number of green tiles required 
+to paint their model for a given number of yellow tiles.
 
 \begin{figure}[htbp]
   \centering
@@ -69,33 +74,32 @@ tiles.
   \label{fig:example}
 \end{figure}
 
-
-Students are prompted to check that their models and rules are {\em
-  general}, which they can accomplish by making appropriate use of
-variables. For example, constructing the model in Figure 1 requires
-one variable – for the number of yellow tiles. If the model has been
-constructed generally by the student, changing the number of yellow
-tiles will lead to it being updated correctly as a whole and also
+Students are prompted by the eXpresser to check that their models and 
+rules are {\em general}, which they can accomplish by making appropriate use of
+variables. For example, constructing the model in Figure~\ref{fig:example} requires
+one variable --- for the number of yellow tiles. If the model has been
+constructed generally by the student, changing the value of this variable
+will lead to the whole model being updated correctly and also
 still being correctly and fully coloured. The eXpresser has an
 `animation' facility which allows students to explore the generality
 of their models and rules. This facility automatically applies
 different random values to the variables used by the student and
 displays the resulting instances of the model in a separate pane of
-their display screen.  
+their screen.  
 
 Tasks are designed to contextualise students' interaction with the
 eXpresser and include a set of goals that students need to achieve,
 e.g. `construct your model', `make sure it is correctly coloured',
 `check that it animates without messing up', and `check that your
 animated model is always correctly coloured'. The task goals are
-presented to the student within an Activity Document, in which
+presented to the student within an {\em Activity Document}, in which
 students can tick off goals they believe they have completed, answer
-questions relating to the task, reflect on their construction approach
-etc. We refer the reader to~\cite{Manolis2012Sowing} for details of 
-further details of the eXpresser, its `epistemic
-affordances' and how it can enhance
- students’ understanding of algebraic generalisation and to~\cite{MiGen-CAE} for further details
-of the system architecture, the Activity and Task design, and Activity Documents.  
+questions relating to the task, and reflect on their construction approach.
+We refer the reader to~\cite{Manolis2012Sowing} for further 
+details of the eXpresser, its `epistemic affordances' and how it can 
+enhance students' understanding of algebraic generalisation 
+and to~\cite{MiGen-CAE} for further details of the MiGen system architecture, 
+the Activity and Task design tools, and Activity Documents.  
 
 Exploratory Learning Environments such as MiGen's eXpresser
 have the potential to support students' exploration while at the same
@@ -103,39 +107,34 @@ time fostering progressive building of knowledge. However, the
 exploratory nature of the tasks undertaken with eXpresser requires
 that personalised feedback is provided to students as they construct
 their solutions, and not just at the end of the task. This feedback
-includes prompts to help students engage with a task, improve their
-solutions, reflect upon their interactions and guide them towards
-successful completion of the task, and generalise their 
-solutions~\cite{MiGen-CAE,MiGen-JRPIT}. 
-
-The feedback is generated by another
-component of the MiGen system, the {\bf eGeneraliser}, based on an
-analysis of students’ actions in the eXpresser. %
+includes prompts to help students engage with a task, 
+guide them towards successful completion of the task, 
+and generalise their solutions~\cite{MiGen-CAE,MiGen-JRPIT}. 
+This feedback is generated by another
+component of the MiGen system, the {\em eGeneraliser}, based on an
+analysis of students' actions in the eXpresser. 
 % and in MiGen we provide personalised feedback to students as they are
 % undertaking their constructions, in the form of a series of prompts
 % and nudges that help students reflect upon their interactions and
 % guide them towards successful completion of the task. 
 %
-The aim of the
-feedback is to balance students' freedom to explore while at the same
-time providing sufficient support to ensure that learning is
-achieved. We refer the reader to~\cite{MiGen-JRPIT} for
-details of the design of the eGeneraliser and of the feedback it
-provides to students, and the way that this feedback is generated by
-the system.  
-
+The aim of the feedback is to balance students' freedom to explore 
+while at the same time providing sufficient support to ensure that 
+learning is being achieved. We refer the reader to~\cite{MiGen-JRPIT} for
+details of the design of the eGeneraliser and of the feedback that it
+provides to students. 
 
 %\subsection{Our approach - merge with previous}
 %\label{sec:our-approach}
  
 %In the MiGen system, 
 
-As students are undertaking their tasks within the eXpresser, a series
-of {\em indicators} are automatically detected by the eXpresser, or
+As students are undertaking the task set in the eXpresser, a series
+of {\em indicators} are automatically detected by the eXpresser or
 inferred by the eGeneraliser and submitted by them to the MiGen
 Server for storage in the MiGen database\footnote{The MiGen software
-  comprises the eXpresser running on each student’s computer, the TA
-  tools running on the teacher’s computer, and the MiGen Server and
+  comprises the eXpresser running on each student's computer, the TA
+  tools running on the teacher's computer, and the MiGen Server and
   database running on a third computer. The MiGen database stores all
   the information produced and required by the eXpresser and the TA
   tools (see ~\cite{MiGen-CAE,IEEE-TLT-TA} for details).}.   
@@ -145,33 +144,41 @@ process, undertaken collaboratively with our group of teacher
 collaborators on the MiGen project (see Section~\ref{sec:methodology}).  
 
 There are two categories of indicators: Task Independent (TI)
-indicators refer to aspects of the student's interactions that are
-related to the eXpresser itself and do not depend on the specific task
+indicators refer to aspects of the student's interaction that are
+related to the microworld itself and do not depend on the specific task
 the student is working on. TI indicators generally refer to a single
-action undertaken by the student, such as 'placed a tile on the
-canvas', 'created a building-block', 'created a pattern'. In contrast,
-the detection of Task Dependent (TD) indicators requires access to
-knowledge about the task that the student is working on, it may relate
-to combinations of actions by the student, and it requires intelligent
+action undertaken by the student, such as `placed a tile on the
+canvas', `created a building block', `created a pattern'. In contrast,
+the detection of Task Dependent (TD) indicators requires 
+knowledge of the task the student is working on, may relate
+to combinations of student actions, and requires intelligent
 reasoning by the system. This reasoning is undertaken by the
-eGeneraliser component, using a mixture of case-based and rule-based
-techniques. Examples of TD indicators are 'student has made a
-plausible building block for this task', 'student has coloured their
-pattern generally' and 'student has achieved a task goal'. Detailed
+eGeneraliser, using a mixture of case-based and rule-based
+techniques. Examples of TD indicators are `student has made a
+plausible building block for this task', `student has coloured their
+pattern generally' and `student has achieved a task goal'. Detailed
 discussions of the MiGen's TI and TD indicators and how the latter are
 inferred by the eGeneraliser may be found in~\cite{IEEE-TLT-TA}.
  
-The {\bf TA Tools}
-% , which are described in more detail in
-% Section~\ref{sec:teach-assist-tools},
+The TA Tools, described in more detail in Section~\ref{sec:teach-assist-tools},
 receive real-time information from the MiGen server relating to
 occurrences of TI and TD indicators for each student, and each TA tool
 presents a selection of this information in a visual fashion to the
-teacher. The TA tools include the Student Tracking (ST) tool, the
-Classroom Dynamics (CD) tool and the Goal Achievements (GA) tool. The
-ST tool provides real-time visualisation of the occurrence of all TI
-and TD indicators for each student as they are interacting with
-eXpresser. 
+teacher. 
+The TA tools include the Student Tracking (ST) tool, the
+Classroom Dynamics (CD) tool and the Goal Achievements (GA) tool. 
+%
+% AP NOTE - N.B. we need enough detail here for the reader to be able to
+% understand Tables 1 and 2, that come before the detailed description
+% of the tools in Section 4! I have added therefore a bit more info here. 
+%
+The ST tool provides real-time visualisation of the  occurrence of all 
+TI and TD indicators as each student is interacting with eXpresser. 
+Indicators are  coloured Green, Red or Yellow depending on the system's perception
+of whether their occurrence indicates productive interaction,
+unproductive interaction, or interaction that may be productive or
+unproductive depending on context.
+%
 % , showing these in one column of the display for each
 % student, with time increasing downwards, and new information being
 % added at the bottom of the display (see Figure\ref{eee}). Indicators
@@ -180,42 +187,47 @@ eXpresser.
 % expected by the system from constructive interaction, Red if the
 % occurrence of such an indicator is regarded by the system as an
 % obstruction to constructive interaction, Yellow if the occurrence of
-% such an indicator indicates an aspect of the student’s interaction
+% such an indicator indicates an aspect of the student's interaction
 % that may be positive or negative depending on the context, and Blue
 % for indicators that represent feedback generated by the system for the
 % student. Further details relating to Figure 2 and the ST tool are
 % given in Section~\ref{sec:4.1}.
-The CD tool represents the current status of each student in the
-classroom. 
-% visually as a circle whose colour
-% is updated to reflect the current status of the student, which is one
-% of: active and working constructively on the task (Green), inactive
-% (Amber), and waiting for help from the teacher (Red) (see Figure 3). A
-% small subset of the total TI/TD indicators are required to update this
-% information, namely the indicators relating to students’
-% activity/inactivity and students’ usage of the eXpresser’s help
+%
+The CD tool represents each student in the classroom 
+visually as a circle whose colour
+is updated to reflect the current status of the student: 
+active (Green), inactive (Amber), or waiting for help from the teacher (Red). 
+%
+% A small subset of the total TI/TD indicators are required to update this
+% information, namely the indicators relating to students'
+% activity/inactivity and students' usage of the eXpresser's help
 % facility. If the teacher clicks on one of the circles in the CD
-% display, that student’s current model and rule, as currently being
+% display, that student's current model and rule, as currently being
 % worked on by the student in the eXpresser, is displayed to the teacher
 % (see Figure\ref{fff}).
 % 
-The GA tool tracks progress in the current task's goals. 
-% just one of the indicators - `student has achieved
+% The teacher can also select to see a summary of the goal achievement
+% information within the CD tool by switching on a feature that displays
+% within the student's circle the number of goals achieved so far as a
+% fraction of the total number of goals e.g. if the student has achieved
+% 2 of a total of 4 task goals, this would show as 2/4� within the
+% student's circle. That feature has been enabled in the display shown
+% in Figure\ref{4r4r}. 
+%
+An optional feature in this tool shows within each student's circle the number of
+goals achieved so far, as a fraction of the total number of goals of the task. 
+%
+The Goal Achievements (GA) tool shows in more detail the progress of each
+student on achieving each of the goals of the task. 
+% 
+% It tracks just one of the indicators - `student has achieved
 % a task goal' - and shows visually, in the form of one row per student,
 % the achievement of each task goal by each student (see Figure
 % 5). Tasks shown as Green are currently achieved, those shown as White
 % are currently not achieved, and those shown as Amber were achieved at
-% some point during the student’s construction but are not being
+% some point during the student's construction but are not being
 % achieved by the current model.
 
-% REUSE SOMEWHERE
-% The teacher can also select to see a summary of the goal achievement
-% information within the CD tool by switching on a feature that displays
-% within the student’s circle the number of goals achieved so far as a
-% fraction of the total number of goals e.g. if the student has achieved
-% 2 of a total of 4 task goals, this would show as “2/4” within the
-% student’s circle. That feature has been enabled in the display shown
-% in Figure\ref{4r4r}. 
 
 %%% End:
 \input{025related}
