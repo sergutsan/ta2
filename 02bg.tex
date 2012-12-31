@@ -2,38 +2,47 @@
 \section{Background and Related Work}
 \label{sec:backgr-relat-work}
 
-As we mentioned in the introduction, both our group and others have
-made attempts to provide intelligent support in
-ELEs~\cite{MiGen-JRPIT,veermans03,AmersiConati09}.
-However, there will always be situations where the intelligent components cannot 
-help the student or that are intentionally left for the teacher to handle. 
-Examples include very specific conceptual difficulties, 
-engagement nudges to prevent students from getting distracted, 
-and whole-classroom support in, for example, plenary discussions based 
-on students' work. In all these situations, the teacher's role is
-indispensable, especially when dealing with younger children. 
-These types of support are necessary for a productive lesson
-in exploratory learning setting, yet they can become very
-challenging for the teacher. Depending on
-the classroom configuration, the teacher cannot see all the 
-students' screens at the same time. 
-Even if that is possible, constant demands by the students 
-for the teacher's attention can make it very difficult 
-to monitor what all students are doing at all times. 
-There is therefore a clear need for computer-based support to
-increase the teacher's awareness of the classroom `state' 
-so that she can intervene as appropriate. 
-%In order to design these tools we followed a user-centred approach to
-%derive teacher's requirements in the form of usage scenarios. These
-%are presented in Section~\ref{sec:methodology} whereas the tools are
-%described in more detail in Section~\ref{sec:teach-assist-tools}. 
+% REMOVED. IT IS UNNECESSARY (OVERLAPS WITH INTRODUCTION) AND THE
+% PAPER IS VERY LONG.
+%
+% As we mentioned in the introduction, both our group and others have
+% made attempts to provide intelligent support in
+% ELEs~\cite{MiGen-JRPIT,veermans03,AmersiConati09}.
+% However, there will always be situations where the intelligent components cannot 
+% help the student or that are intentionally left for the teacher to handle. 
+% Examples include very specific conceptual difficulties, 
+% engagement nudges to prevent students from getting distracted, 
+% and whole-classroom support in, for example, plenary discussions based 
+% on students' work. In all these situations, the teacher's role is
+% indispensable, especially when dealing with younger children. 
+% These types of support are necessary for a productive lesson
+% in an exploratory learning setting, yet they can become very
+% challenging for the teacher. Depending on
+% the classroom configuration, the teacher cannot see all the 
+% students' screens at the same time. 
+% Even if that is possible, constant demands by the students 
+% for the teacher's attention can make it very difficult 
+% to monitor what all students are doing at all times. 
+% There is therefore a clear need for computer-based support to
+% increase the teacher's awareness of the classroom `state' 
+% so that she can intervene as appropriate. 
+% %In order to design these tools we followed a user-centred approach to
+% %derive teacher's requirements in the form of usage scenarios. These
+% %are presented in Section~\ref{sec:methodology} whereas the tools are
+% %described in more detail in Section~\ref{sec:teach-assist-tools}. 
+
+% In sub-section~\ref{sec:migen-system} we present the MiGen
+% system that provides the context in which we have designed and developed 
+% a set of Teacher Assistance (TA) tools that aim to assist the
+% teacher in focussing her attention across the class and to inform the
+% teacher's interventions to support students as they are working in the ELE. 
+% We present the MiGen system context in order to help the reader understand 
+% our particular case study and to provide a glimpse of the open-ended nature 
+% of the activities that students undertake.  In sub-section~\ref{sec:related}
+% we present related work.
 
 In sub-section~\ref{sec:migen-system} we present the MiGen
-system that provides the context in which we have designed and developed 
-a set of Teacher Assistance (TA) tools that aim to assist the
-teacher in focussing her attention across the class and to inform the
-teacher's interventions to support students as they are working in the ELE. 
-We present the MiGen system context in order to help the reader understand 
+system context in order to help the reader understand 
 our particular case study and to provide a glimpse of the open-ended nature 
 of the activities that students undertake.  In sub-section~\ref{sec:related}
 we present related work.
@@ -165,68 +174,79 @@ receive real-time information from the MiGen server relating to
 occurrences of TI and TD indicators for each student, and each TA tool
 presents a selection of this information in a visual fashion to the
 teacher. 
-The TA tools include the Student Tracking (ST) tool, the
-Classroom Dynamics (CD) tool and the Goal Achievements (GA) tool. 
-%
-% AP NOTE - N.B. we need enough detail here for the reader to be able to
-% understand Tables 1 and 2, that come before the detailed description
-% of the tools in Section 4! I have added therefore a bit more info here. 
-%
-The ST tool provides real-time visualisation of the  occurrence of all 
-TI and TD indicators as each student is interacting with eXpresser. 
-Indicators are  coloured Green, Red or Yellow depending on the system's perception
-of whether their occurrence indicates productive interaction,
-unproductive interaction, or interaction that may be productive or
-unproductive depending on context.
-%
-% , showing these in one column of the display for each
-% student, with time increasing downwards, and new information being
-% added at the bottom of the display (see Figure\ref{eee}). Indicators
-% are coloured Green if the occurrence of such an indicator indicates
-% that the actions of the student are consistent with what would be
-% expected by the system from constructive interaction, Red if the
-% occurrence of such an indicator is regarded by the system as an
-% obstruction to constructive interaction, Yellow if the occurrence of
-% such an indicator indicates an aspect of the student's interaction
-% that may be positive or negative depending on the context, and Blue
-% for indicators that represent feedback generated by the system for the
-% student. Further details relating to Figure 2 and the ST tool are
-% given in Section~\ref{sec:4.1}.
-%
-The CD tool represents each student in the classroom 
-visually as a circle whose colour
-is updated to reflect the current status of the student: 
-active (Green), inactive (Amber), or waiting for help from the teacher (Red). 
-%
-% A small subset of the total TI/TD indicators are required to update this
-% information, namely the indicators relating to students'
-% activity/inactivity and students' usage of the eXpresser's help
-% facility. If the teacher clicks on one of the circles in the CD
-% display, that student's current model and rule, as currently being
-% worked on by the student in the eXpresser, is displayed to the teacher
-% (see Figure\ref{fff}).
-% 
-% The teacher can also select to see a summary of the goal achievement
-% information within the CD tool by switching on a feature that displays
-% within the student's circle the number of goals achieved so far as a
-% fraction of the total number of goals e.g. if the student has achieved
-% 2 of a total of 4 task goals, this would show as 2/4ù within the
-% student's circle. That feature has been enabled in the display shown
-% in Figure\ref{4r4r}. 
-%
-An optional feature in this tool shows within each student's circle the number of
-goals achieved so far, as a fraction of the total number of goals of the task. 
-%
-The Goal Achievements (GA) tool shows in more detail the progress of each
-student on achieving each of the goals of the task. 
-% 
-% It tracks just one of the indicators - `student has achieved
-% a task goal' - and shows visually, in the form of one row per student,
-% the achievement of each task goal by each student (see Figure
-% 5). Tasks shown as Green are currently achieved, those shown as White
-% are currently not achieved, and those shown as Amber were achieved at
-% some point during the student's construction but are not being
-% achieved by the current model.
+% % REMOVED FOR THE SAKE OF SPACE. SEE ALSO DISCUSSION BELOW (AP NOTE,
+% % SG REPLY). 
+% % 
+% The TA tools include the Student Tracking (ST) tool, the
+% Classroom Dynamics (CD) tool and the Goal Achievements (GA) tool. 
+% %
+% % AP NOTE - N.B. we need enough detail here for the reader to be able to
+% % understand Tables 1 and 2, that come before the detailed description
+% % of the tools in Section 4! I have added therefore a bit more info
+% % here. 
+% %
+% % SG REPLY - I disagree. I think this is not necessary, so I remove it
+% % for the sake of space. Table 1 and 2 are near Section 4, and they
+% % actually appear on paper after Section 4 has started. 
+% % On a related note, I am not sure Tables 1 and 2 should make
+% % reference to the use of the tools... it may be a bit distracting,
+% % and overlaps with Section 4.5. 
+% %
+% The ST tool provides real-time visualisation of the  occurrence of all 
+% TI and TD indicators as each student is interacting with eXpresser. 
+% Indicators are  coloured Green, Red or Yellow depending on the system's perception
+% of whether their occurrence indicates productive interaction,
+% unproductive interaction, or interaction that may be productive or
+% unproductive depending on context.
+% %
+% % , showing these in one column of the display for each
+% % student, with time increasing downwards, and new information being
+% % added at the bottom of the display (see Figure\ref{eee}). Indicators
+% % are coloured Green if the occurrence of such an indicator indicates
+% % that the actions of the student are consistent with what would be
+% % expected by the system from constructive interaction, Red if the
+% % occurrence of such an indicator is regarded by the system as an
+% % obstruction to constructive interaction, Yellow if the occurrence of
+% % such an indicator indicates an aspect of the student's interaction
+% % that may be positive or negative depending on the context, and Blue
+% % for indicators that represent feedback generated by the system for the
+% % student. Further details relating to Figure 2 and the ST tool are
+% % given in Section~\ref{sec:4.1}.
+% %
+% The CD tool represents each student in the classroom 
+% visually as a circle whose colour
+% is updated to reflect the current status of the student: 
+% active (Green), inactive (Amber), or waiting for help from the teacher (Red). 
+% %
+% % A small subset of the total TI/TD indicators are required to update this
+% % information, namely the indicators relating to students'
+% % activity/inactivity and students' usage of the eXpresser's help
+% % facility. If the teacher clicks on one of the circles in the CD
+% % display, that student's current model and rule, as currently being
+% % worked on by the student in the eXpresser, is displayed to the teacher
+% % (see Figure\ref{fff}).
+% % 
+% % The teacher can also select to see a summary of the goal achievement
+% % information within the CD tool by switching on a feature that displays
+% % within the student's circle the number of goals achieved so far as a
+% % fraction of the total number of goals e.g. if the student has achieved
+% % 2 of a total of 4 task goals, this would show as 2/4ù within the
+% % student's circle. That feature has been enabled in the display shown
+% % in Figure\ref{4r4r}. 
+% %
+% An optional feature in this tool shows within each student's circle the number of
+% goals achieved so far, as a fraction of the total number of goals of the task. 
+% %
+% The Goal Achievements (GA) tool shows in more detail the progress of each
+% student on achieving each of the goals of the task. 
+% % 
+% % It tracks just one of the indicators - `student has achieved
+% % a task goal' - and shows visually, in the form of one row per student,
+% % the achievement of each task goal by each student (see Figure
+% % 5). Tasks shown as Green are currently achieved, those shown as White
+% % are currently not achieved, and those shown as Amber were achieved at
+% % some point during the student's construction but are not being
+% % achieved by the current model.
 
 
 %%% End:
